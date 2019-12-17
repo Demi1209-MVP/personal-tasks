@@ -5,7 +5,7 @@ select * from PropertyOwnerReview
 select * from Address
 select * from PropertyHomeValue
 
---a.Display a list of all property names and their property id¡¯s for Owner Id: 1426.
+--a.Display a list of all property names and their property idÂ¡Â¯s for Owner Id: 1426.
 
 SELECT o.OwnerId,o.PropertyId,t.Name
 From 
