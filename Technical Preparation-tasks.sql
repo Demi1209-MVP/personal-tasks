@@ -16,10 +16,10 @@ where o.OwnerId=1426
 
 
 --Display the current home value for each property in question a).
-SELECT o.OwnerId,o.PropertyId,t.Name,h.Value
+SELECT o.OwnerId,o.PropertyId,t.Name,f.CurrentHomeValue
 From 
 OwnerProperty as o 
 JOIN Property AS p on o.PropertyId=p.Id
 JOIN PropertyType AS t on p.PropertyTypeId=t.PropertyTypeId
-JOIN PropertyHomeValue as h on o.PropertyId=h.PropertyId
+JOIN PropertyFinance as f on o.PropertyId=f.PropertyId
 where o.OwnerId=1426
